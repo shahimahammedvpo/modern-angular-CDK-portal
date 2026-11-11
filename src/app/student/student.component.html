@@ -1,0 +1,12 @@
+<h2>student Dashboard</h2>
+<p>welcome student</p>
+
+<h2>student list</h2>
+
+<ul>
+    @for (student of studentService.students(); track student) {
+        <li>{{student}}</li>
+    }
+</ul>
+
+<button (click)="addStudent()">add student</button>
